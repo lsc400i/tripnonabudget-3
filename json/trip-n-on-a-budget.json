@@ -1,0 +1,26 @@
+[ {
+  "duration" : 4,
+  "estimated cost" : "$350",
+  "place" : "New York",
+  "thumbnail" : " "
+}, {
+  "duration" : 3,
+  "estimated cost" : "$800",
+  "place" : "San Francisco",
+  "thumbnail" : " "
+}, {
+  "duration" : 6,
+  "estimated cost" : "$2000",
+  "place" : "Italy",
+  "thumbnail" : " "
+}, {
+  "duration" : 4,
+  "estimated cost" : "$1500",
+  "place" : "Hawaii",
+  "thumbnail" : " "
+}, {
+  "duration" : 30,
+  "estimated cost" : "$5000",
+  "place" : "Viet Nam",
+  "thumbnail" : " "
+} ]

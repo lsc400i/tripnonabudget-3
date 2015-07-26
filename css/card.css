@@ -1,0 +1,74 @@
+
+
+.card {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #141414;
+  /*border-radius: 10px;*/
+  margin: 0px auto;
+  font-weight: light;
+  font-size: 13px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.location {
+  position: relative;
+  /*left: 15px;*/
+  top: 250px;
+  /*width: 90%;*/
+  /*max-height: 15px;*/
+  overflow: hidden;
+  /*font-weight: bold;*/
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  text-align: left;
+  font-weight: light;
+  font-size: 20px;
+}
+
+.duration {
+  position: relative;
+  right: 10px;
+  top: 210px;
+  /*height: 125px;*/
+  /*width: 90%;*/
+  color: white;
+  text-align: right;
+}
+
+.estimatedCost {
+  position: relative;
+  right: 10px;
+  top: 210px;
+  /*height: 125px;*/
+  /*width: 90%;*/
+  color: white;
+  text-align: right;
+}
+
+.mask {
+    background-color: rgba(0,0,0,.8);
+    /* color: white; */
+    margin-top: -84px;
+    height: 300px;
+    /* font-size: 16px; */
+    /* font-weight: lighter; */
+    /* font-family: sans-serif; */
+    transform: translateY(-393px);
+    transition: transform 750ms;
+
+}
+
+.close-btn {
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}

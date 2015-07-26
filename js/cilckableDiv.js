@@ -1,0 +1,1 @@
+window.location = $(this).data(".card");

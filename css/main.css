@@ -1,0 +1,239 @@
+body {
+  background-color: #fd9939;
+  color: white;
+  letter-spacing: .6px;
+  font-weight: 400;
+  font-family: "proxima-nova",sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+#nav-header {
+  background-color: rgba(230, 123, 0, 0.5); 
+  font-size: 34px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+#nav-header a {
+  font-size: 18px;
+  color: white; 
+  padding: 0 7px;
+}
+
+.right {
+text-align: right;
+
+}
+
+
+/* Visited links under #nav-header */
+#nav-header a, a:visited {
+  text-decoration: none;
+}
+
+#hero img {
+  width: 100%;
+
+}
+#hero {
+
+}
+#main-container {
+  background-color: #fd9939;
+}
+
+#logo-image {
+  width: 100%;
+}
+
+#headline-text {
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+#narrative-text {
+  font-size: 25px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+#testimony {
+  font-size: 18px;
+  color: #aaaaaa;
+  margin: 20px 0;
+}
+
+#customer-container {
+  background-color: white;
+  width: 100%;
+}
+
+.customers img {
+  padding: 25px 0;
+  max-width: 300px;
+}
+
+.row-spacer {
+  margin-top: 25px;
+}
+
+#footer {
+  
+  background-color: white;
+  font-size: 18px;
+  color: #fd9939;
+  width: 100%;
+  padding: 20px;
+}
+
+#footer li{
+  padding-bottom: 5px;
+}
+#footer a {
+  color: #fd9939;
+  margin-left: ;
+}
+
+#footer ul {
+  padding-left: 0px;
+
+}
+#footer ul li {
+  list-style: none;
+}
+@media (min-width: 768px) {
+ #mybackground {
+   background-size: 50%, 25%, 25%;
+   background-position: 40% 20%;
+ }
+}
+
+.gallery {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 25px;
+}
+
+/* I want to have neighboring images peek through.
+   All <img> elements underneath .gallery
+   are shrunk to 90% width. */
+.gallery > img {
+  width: 100%;
+}
+
+.gallery::-w
+ebkit-scrollbar { 
+  display: none; 
+}
+
+/* Apply this to all .row elements to create breathing room.*/
+.spacer {
+  margin-top: 25px;
+}
+
+#gallery {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.travel {
+margin: 20px 0;
+}
+
+.travel img{
+  max-width: 300px;
+  border: 4px solid white;
+  margin: 40px 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+form {
+margin-top: 20px;
+
+}
+
+.social-media li{
+margin-bottom: 20px;
+width: 100%;
+height: 40px;
+padding-top: 10px;
+}
+
+.social-media li a{
+  color: #fff;
+}
+a.button{
+margin-bottom: 20px;
+width: 100%;
+padding: 10px;
+color: #fff;
+}
+
+.orange {
+  background-color: #ce471a;
+}
+.google {
+  background-color: #D50F25;
+
+}
+
+.facebook {
+  background-color: #4c66a4;
+
+}
+
+.twitter {
+  background-color: #55acee;
+
+}
+
+hr.thin {
+height: 1px;
+border: 0;
+color: #333;
+background-color: #333;
+width: 100%;
+} 
+
+a.forgot  {
+  color: #fff;
+}
+
+h2 {
+  font: 16px sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2.no-span {
+  display: table;
+  white-space: nowrap;
+}
+h2.no-span:before,
+h2.no-span:after {
+  border-top: 1px solid #fff;
+  content: '';
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 50%;
+}
+h2.no-span:before {
+  right: 1.5%;
+}
+h2.no-span:after {
+  left: 1.5%;
+}
+.small-text {
+  font-size: 10px;
+}
