@@ -1,0 +1,94 @@
+#bucketList-container {
+  background-color: orange;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+
+
+}
+
+.title-bar .row-two .bucket-list-row {
+	width: 100%;
+}
+
+.title-bar {
+	background-color: #FFCC4D;
+	height: 50px;
+
+}
+
+.trip {
+	font-size: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+.row-two {
+}
+
+.back-button {
+	height: 50px;
+	background-color: #FFEBAD;
+	width: 60%;
+	display: inline-block;
+	margin: 0;
+}
+
+.back-arrow {
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+}
+
+.back-text {
+	text-align: right;
+	display: inline-block;
+	margin: 0;
+}
+.add-block {
+	height: 50px;
+	background-color: #FFD86B;
+	width: 40%;
+	display: inline-block;
+	margin-left:-5px ;
+}
+.add-icon {
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+}
+
+.add-text {
+	text-align: right;
+	display: inline-block;
+	margin: 0;
+}
+
+#bucket-list-container {
+	overflow: scroll;
+	height: 500px;
+}
+.bucket-list-row {
+	display: block;
+	border-bottom: 1px solid #FFD86B; 
+	height: 30px;
+	padding-top: 10px;	
+	cursor: pointer;
+}
+.bucket-list-row:hover {
+	background-color: #fff;
+}
+
+.bucket-list-item {
+	text-align: left;
+	display: inline-block;
+	width: 90%;
+}
+
+.bucket-list-close {
+	text-align: right;
+	display: inline-block;
+}
+
+.center {
+	text-align: center;
+}

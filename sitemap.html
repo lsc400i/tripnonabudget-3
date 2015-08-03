@@ -12,10 +12,12 @@
     <title>Trip'n on a Budget</title>
 
     <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="cards.css">
     <link href="css/bootstrap.css" rel="stylesheet">
-    
+
     <!-- Custom CSS -->
-   
+    <script src="//use.typekit.net/zhj2skn.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
     <style>
     body {
         padding-top: 50px;
@@ -24,10 +26,7 @@
     </style>
 
     <!-- Include assets/main.css -->
-
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/bucket_list.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +50,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Trip'n on a Budget</a>
+                <a class="navbar-brand" href="index.html">Trip'n on a Budget</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -69,9 +68,8 @@
                         <a href="#">Support</a>
                     </li>
                     <li>
-                        <a href="login.html">Sign Out</a>
+                        <a href="login.html">Sign In</a>
                     </li>
-                    
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -80,79 +78,70 @@
     </nav>
 
     <!-- Page Content -->
-    <div id="tripsList-container"></div>
-    <div id="trip-container"></div>
-    <div id="mask"></div>
-    <div id="budgetList-container"></div>
-    <div id="checkList-container"></div>
-    <div id="bucketList-container"></div>
-    
-    
-
-<!-- Trips List Template. -->  
-    <script id="tripList-template" type="x-tmpl-mustache">  
-    <div class="card" style="background-image: url({{image}})">
-        <div class="location">{{location}}</div>
-        <div class="duration">{{duration}}</div>
-        <div class="estimatedCost">{{estimatedCost}}</div>
-    </div>   
-  </script>
-
-  <!-- Trip Container Template. -->  
-    <script id="tripContainer-template" type="x-tmpl-mustache">  
-    <div class="card" style="background-image: url({{image}})">
-        <div class="location">{{location}}</div>
-        <div class="duration">{{duration}}</div>
-        <div class="estimatedCost">{{estimatedCost}}</div>
-    </div>   
-  </script>
-
-  <!-- Budget List Template. -->  
-    <script id="budgetList-template" type="x-tmpl-mustache">  
-    <div class="budget-list-row">
-        <div class="budget-list-item">{{budgetList}}</div>
-        <div class="budget-list-cost">{{budgetCost}}</div>
-    </div> 
-  </script>
-
-    <!-- Bucket List Template. -->  
-    <script id="bucketList-template" type="x-tmpl-mustache">  
-<div class="title-bar">
-    <div class="hamburger"></div>
-    <div class="trip">Viet Nam</div>
-    <div class="search"></div>
-</div>
-<div class="row-two">
-    <div class="back-button">
-        <div class="back-arrow"><a href="#"><</a></div>
-        <div class="back-text">Bucket List</div>
+    <!-- Hero -->
+    <div id="hero">
+        <img src="images/image_062.jpg">
     </div>
-    <div class="add-block">
-        <div class="add-icon"><a href="#">+</a></div>
-        <div class="add-text">Add New Item</div>
+
+<!-- Center image using Bootstrap -->
+<div id="main-container" class="container">
+
+    <!-- New row: Centered text styled by #headline-text -->
+    <div class="center row">
+        <div class="col-xs-1 col-sm-2"></div>
+        <div id="headline-text" class="col-xs-10 col-sm-8 col-lg-12">
+            Keeping an eye on the sky and on your wallet.
+        </div>      
     </div>
-</div>
-    <div class="bucket-list-row">
-        <div class="bucket-list-item">{{bucketList}}</div>
-        <div class="bucket-list-close"><a href="#">X</a></div>
+    <!-- New row: Centered text styled by #narrative-text -->
+    <div class="row">
+        <div class="col-xs-1 col-sm-2 col-md-2 "></div>
+        <div id="narrative-text" class="col-xs-10 col-sm-8 col-md-8 center">
+            A mobile app that lets you plan your dream vacation while keeping an eye on where your money goes.
         </div>
-  </script>
-    
-   <!-- checkList Template. -->  
-    <script id="checkList-template" type="x-tmpl-mustache">  
-    
-    <div class="checkList-row">
-        <div class="checkList-item">{{checkList}}</div>
-        <div class="checkList-checkbox"><a href="#">X</a></div>
-    </div>   
-  </script>
+        <div class="col-xs-1 col-sm-2 col-md-3"></div>
+    </div>
+</div>
 
+<!-- Row of Screens -->
+<div id="customer-container" class="container">
+    <div class="center customers row">
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg1.png"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg2.png"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg3.png"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg4.png"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg5.png"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/tripnonabudget_pg3.png"></div>
+    </div>
+</div>
+
+<!-- Row of images -->
+<div class="container">
+    <div class="center travel row">
+        <div class="col-sm-6 col-md-4"><img src="images/image_001.jpg"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/image_002.jpg"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/image_003.jpg"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/image_004.jpg"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/image_005.jpg"></div>
+        <div class="col-sm-6 col-md-4"><img src="images/image_006.jpg"></div>
+    </div>
+</div>
+<div id="footer">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>   
+</div>
+    <!-- /.container -->
+    
+  
+    <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>
-    <script src="js/cards.js"></script>
-    <!-- <script src="js/renderData.js"></script> -->
-        <!-- Bootstrap Core JavaScript -->
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 
 </body>
 
