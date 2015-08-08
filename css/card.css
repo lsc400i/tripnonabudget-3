@@ -1,4 +1,6 @@
-
+.tripImage {
+  width: cover;
+}
 
 .card {
   width: 100%;
@@ -50,17 +52,15 @@
   text-align: right;
 }
 
-.mask {
-    background-color: rgba(0,0,0,.8);
-    /* color: white; */
-    margin-top: -84px;
-    height: 300px;
-    /* font-size: 16px; */
-    /* font-weight: lighter; */
-    /* font-family: sans-serif; */
-    transform: translateY(-393px);
-    transition: transform 750ms;
-
+#mask {
+  position: fixed;
+  display: none;
+  opacity: .8;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
 }
 
 .close-btn {
@@ -71,4 +71,31 @@
   position: absolute;
   right: 10px;
   top: 10px;
+}
+
+.poster {
+ width: 100%;
+ height: 360px;
+ background-size: cover;
+ position: absolute;
+ background-repeat: no-repeat;
+ top: 0;
+}
+.lightbox {
+  position: fixed;
+  left:38%;
+  top: 50px;
+  width: 100%;
+  height: 520px;
+  margin: 0 0 0 -37.5%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-weight: lighter;
+  transform: translateY(-365px);
+  transition: transform 750ms;
+}
+
+#lightbox-container #checkList-container #budgetList-container #trip-container #bucketList-container{
+  display: none;
 }

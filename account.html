@@ -1,33 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Trip'n on a Budget</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-   
+    <link rel="stylesheet" href="css/card.css">
+        <link rel="stylesheet" href="css/bucket_list.css">
+    <link rel="stylesheet" href="css/bootstrap.css" >
     <style>
     body {
         padding-top: 50px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     </style>
-
-    <!-- Include assets/main.css -->
-
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/card.css">
-    <link rel="stylesheet" href="css/bucket_list.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,16 +45,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="http://tripnonabudgetapp.pancakeapps.com/account.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Features</a>
+                        <a href="http://tripnonabudgetapp.pancakeapps.com/bucket_list.html">Bucket List</a>
                     </li>
                     <li>
-                        <a href="#">Pricing</a>
+                        <a href="http://tripnonabudgetapp.pancakeapps.com/budget-category_list.html">Budget Category</a>
                     </li>
                     <li>
-                        <a href="#">Support</a>
+                        <a href="http://tripnonabudgetapp.pancakeapps.com/checklist.html">Checklist</a>
+                    </li>
+                    <li>
+                    <a href="http://tripnonabudgetapp.pancakeapps.com/budget_list.html">Budget List</a
+                    </li>
+                    <li>
+                        <a href="http://tripnonabudgetapp.pancakeapps.com/trip-category_list.html">Trip Category</a>
                     </li>
                     <li>
                         <a href="login.html">Sign Out</a>
@@ -81,71 +75,72 @@
 
     <!-- Page Content -->
     <div id="tripsList-container"></div>
-    <div id="trip-container"></div>
-    <div id="mask"></div>
-    <div id="budgetList-container"></div>
-    <div id="checkList-container"></div>
-    <div id="bucketList-container"></div>
+
+    <div id="tripsDetails-container"></div>
     
     
 
 <!-- Trips List Template. -->  
+
     <script id="tripList-template" type="x-tmpl-mustache">  
-    <div class="card" style="background-image: url({{image}})">
-        <div class="location">{{location}}</div>
+    <div id="{{ id }}" class="card" style="background-image: url({{ image }})">
+        <div class="location">{{id}}</div>
         <div class="duration">{{duration}}</div>
         <div class="estimatedCost">{{estimatedCost}}</div>
     </div>   
   </script>
 
-  <!-- Trip Container Template. -->  
-    <script id="tripContainer-template" type="x-tmpl-mustache">  
-    <div class="card" style="background-image: url({{image}})">
-        <div class="location">{{location}}</div>
-        <div class="duration">{{duration}}</div>
-        <div class="estimatedCost">{{estimatedCost}}</div>
-    </div>   
-  </script>
 
-  <!-- Budget List Template. -->  
-    <script id="budgetList-template" type="x-tmpl-mustache">  
-    <div class="budget-list-row">
-        <div class="budget-list-item">{{budgetList}}</div>
-        <div class="budget-list-cost">{{budgetCost}}</div>
-    </div> 
-  </script>
 
-    <!-- Bucket List Template. -->  
-    <script id="bucketList-template" type="x-tmpl-mustache">  
+<!-- Trips Details Template. -->  
+    <script id="tripsDetails-template" type="x-tmpl-mustache">  
+
 <div class="title-bar">
     <div class="hamburger"></div>
-    <div class="trip">Viet Nam</div>
+    <div class="trip">{{id}}</div>
     <div class="search"></div>
 </div>
 <div class="row-two">
-    <div class="back-button">
-        <div class="back-arrow"><a href="#"><</a></div>
-        <div class="back-text">Bucket List</div>
+
+    <div id="back-button" class="back-button">
+        <div class="back-arrow"><a href="#"><img src="images/back_arrow.png"></a></div>
+        <div class="back-text">Back</div>
     </div>
     <div class="add-block">
-        <div class="add-icon"><a href="#">+</a></div>
+        <div class="back-arrow"><a href="#"><img src="images/plus-icon.png"></a></div>
         <div class="add-text">Add New Item</div>
     </div>
 </div>
-    <div class="bucket-list-row">
-        <div class="bucket-list-item">{{bucketList}}</div>
-        <div class="bucket-list-close"><a href="#">X</a></div>
-        </div>
+    <div class="row-three">
+    <div class="tripsDetails-row">
+        <div class="bucket-list-title">Duration:</div>
+        <div class="tripsDetails-item">{{duration}} Days</div>
+        
+    </div>
+    <div class="tripsDetails-row">
+        <div class="bucket-list-title">Estimated Cost:</div>
+        <div class="tripsDetails-item">${{estimatedCost}}</div>
+    </div>
+
+    <div class="tripsDetails-row">
+        <div class="bucket-list-title">Bucket List:</a></div>
+        <div class="tripsDetails-item">{{bucketList}}</div>
+    </div>
+    <div class="tripsDetails-row">
+        <div class="bucket-list-title">Checklist:</div>
+        <div class="tripsDetails-item">{{checkList}}</div>
+    </div>
+    <div class="tripsDetails-row">
+        <div class="bucket-list-title">Hotel Info:</div>
+        <div class="tripsDetails-item">{{hotelInfo.name}}, {{hotelInfo.address.street}}, {{hotelInfo.address.city}}, {{hotelInfo.address.state}}, {{hotelInfo.address.zip}}</div> 
+    </div>
+   <div class="tripsDetails-row">
+        <div class="bucket-list-title">Flight Info:</div>
+        <div class="tripsDetails-item">{{flightInfo.airline}}</div>
+    </div>
+
   </script>
     
-   <!-- checkList Template. -->  
-    <script id="checkList-template" type="x-tmpl-mustache">  
-    
-    <div class="checkList-row">
-        <div class="checkList-item">{{checkList}}</div>
-        <div class="checkList-checkbox"><a href="#">X</a></div>
-    </div>   
-  </script>
 
     <script src="js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.1.2/mustache.min.js"></script>

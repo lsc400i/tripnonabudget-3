@@ -1,3 +1,11 @@
+body {
+  background-color: #fd9939;
+  color: white;
+  letter-spacing: .6px;
+  font-weight: 400;
+  font-family: "proxima-nova",sans-serif;
+}
+
 #bucketList-container {
   background-color: orange;
   font-family: sans-serif;
@@ -70,7 +78,6 @@
 .bucket-list-row {
 	display: block;
 	border-bottom: 1px solid #FFD86B; 
-	height: 30px;
 	padding-top: 10px;	
 	cursor: pointer;
 }
@@ -89,6 +96,19 @@
 	display: inline-block;
 }
 
-.center {
-	text-align: center;
+
+.box {
+	max-width: 600px;
+	min-width: 100px;
+	height: 150px;
+	background-color: #eaeaea;
+	margin: 40px 10px 0 10px;
+
+}
+
+.auto {
+	margin-right: auto;
+	margin-left: auto;
+
+
 }

@@ -132,7 +132,7 @@ text-align: right;
 }
 
 .gallery::-w
-ebkit-scrollbar { 
+webkit-scrollbar { 
   display: none; 
 }
 

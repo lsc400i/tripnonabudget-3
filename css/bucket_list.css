@@ -1,10 +1,36 @@
-#bucketList-container {
-  background-color: orange;
+.orange {
+  background-color: #fd9939;
+  padding-bottom: 60px;
+}
+
+#tripsDetails-container {
+  position: fixed;
   font-family: sans-serif;
   padding: 0;
   margin: 0;
+  left:-100%;
+  top: 50px;
+  width: 100%;
+  height: 150%;
+  margin: 0 0 0 -38%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: orange;
+}
 
-
+#bucketList-container {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  top: 50px;
+  height: 150%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  font-weight: lighter;
+  background-color: orange;
 }
 
 .title-bar .row-two .bucket-list-row {
@@ -13,16 +39,24 @@
 
 .title-bar {
 	background-color: #FFCC4D;
-	height: 50px;
+	height: 60px;
 
 }
 
 .trip {
 	font-size: 30px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 }
 .row-two {
+
+}
+.row-three {
+overflow: hidden;	
+
+height: 500px;
+padding-bottom: 40px;
 }
 
 .back-button {
@@ -31,12 +65,16 @@
 	width: 60%;
 	display: inline-block;
 	margin: 0;
+	padding-top: 13px;
+	padding-left: 20px;
+	cursor: p
 }
 
 .back-arrow {
 	text-align: left;
 	display: inline-block;
-	margin: 0;
+	margin: 0 0 0 10px;
+
 }
 
 .back-text {
@@ -50,6 +88,8 @@
 	width: 40%;
 	display: inline-block;
 	margin-left:-5px ;
+	padding-top: 13px;
+	padding-left: 20px;
 }
 .add-icon {
 	text-align: left;
@@ -63,28 +103,64 @@
 	margin: 0;
 }
 
-#bucket-list-container {
-	overflow: scroll;
-	height: 500px;
-}
+
+
 .bucket-list-row {
 	display: block;
 	border-bottom: 1px solid #FFD86B; 
-	height: 30px;
-	padding-top: 10px;	
+	padding-top: 10px;
+	padding-bottom: 10px;	
 	cursor: pointer;
 }
-.bucket-list-row:hover {
-	background-color: #fff;
+.tripsDetails-row {
+	display: block;
+	border-bottom: 1px solid #FFD86B; 
+	padding-top: 10px;
+	padding-bottom: 10px;	
+	cursor: pointer;
 }
-
+.tripsDetails-item {
+	text-align: left;
+	display: block;
+	padding-left: 10px;
+}
+.bucket-list-row:hover {
+	background-color: #FFD86B;
+}
+.tripsDetails-row:hover {
+	background-color: #FFD86B;
+}
 .bucket-list-item {
 	text-align: left;
 	display: inline-block;
-	width: 90%;
+	padding-left: 10px;
 }
 
-.bucket-list-close {
+.bucket-list-title {
+	text-align: left;
+	display: block;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.bucket-list-close{
 	text-align: right;
 	display: inline-block;
+	padding-right: 10px;
+	font-weight: bold;
+	float: right;
+}
+.box {
+	max-width: 600px;
+	min-width: 100px;
+	height: 150px;
+	background-color: #eaeaea;
+	margin: 40px 10px 0 10px;
+
+}
+
+.auto {
+	margin-right: auto;
+	margin-left: auto;
+
+
 }
